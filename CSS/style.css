@@ -361,7 +361,7 @@ body.fade-out {
     width: 100%;
     background-color: var(--pure-white);
     border-bottom: 1px solid var(--border-color);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     padding: 16px 0;
