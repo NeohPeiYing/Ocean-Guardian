@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guardian | Topics</title>
+    <link rel="icon" href="Image/oceanguardianlogo.png" type="Image/oceanguardianlogo.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-brand">
+                <div class="brand-text-wrapper">
+                    <span class="brand-main">OCEAN</span>
+                    <span class="brand-sub">GUARDIAN</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu-links">
+                <li><a href="home.html#home" class="menu-item">Home</a></li>
+                <li><a href="about.html" class="menu-item">About</a></li>
+
+                <li class="nav-dropdown-wrapper">
+                    <a href="#topics" class="menu-item dynamic-trigger active">
+                        Topics <i class='bx bx-chevron-down toggle-arrow'></i>
+                    </a>
+                    <ul class="dropdown-panel">
+                        <li><a href="endangeredmarineanimals.html"> Endangered Marine Species</a></li>
+                        <li><a href="topic.html#marine-ecosystem"> Marine Ecosystems</a></li>
+                        <li><a href="topic.html#threats"> Threats</a></li>
+                        <li><a href="topic.html#solution"> Conservation & Action</a></li>
+                        <li><a href="successstories.html"> Conservation Success Stories</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="quiz.html" class="menu-item">Quiz</a></li>
+                <li><a href="signupandlogin/dashboard.html" class="menu-item">Dashboard</a></li>
+
+                <!-- MOBILE SIGN UP -->
+                <li class="mobile-only-cta">
+                    <div class="mobile-nav-action-group" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 15px;">
+                        <a href="signupandlogin/login.html" class="nav-cta-block" id="mobile-auth-btn" style="margin: 0; flex: 1;">Log In</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-action-group">
+                <a href="signupandlogin/login.html" class="nav-cta-block" id="auth-btn">Log In</a>
+                <a href="signupandlogin/dashboard.html" id="profile-btn" class="profile-btn"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-layout-wrapper">
+
+        <!-- STICKY SIDEBAR -->
+        <aside class="topics-sidebar" id="topicsSidebar">
+            <div class="topic-group">
+                <h3>Endangered Marine Species</h3>
+                <ul>
+                    <li><a href="endangeredmarineanimals.html">Endangered Marine Animals</a></li>
+                </ul>
+            </div>
+            <div class="topic-group">
+                <h3>Marine Ecosystem</h3>
+                <ul>
+                    <li class="active"><a href="#marine-ecosystem">What is Marine Ecosystem?</a></li>
+                    <li><a href="#coral-reefs">Types of Marine Ecosystem</a></li>
+                    <li><a href="#ecosystem-matters">Why Marine Ecosystem Matters</a></li>  
+                </ul>
+            </div>
+            <div class="topic-group">
+                <h3>Threats They Face</h3>
+                <ul>
+                    <li><a href="#threats">Did You Know?</a></li>
+                    <li><a href="#humans">Human Caused Threats</a></li>
+                    <li><a href="#effects">Effects on Marine Life</a></li>
+                </ul>
+            </div>
+            <div class="topic-group">
+                <h3>The Solution</h3>
+                <ul>
+                    <li><a href="#solution">Why It Matters</a></li>
+                    <li><a href="#help">How You Can Help</a></li>
+                </ul>
+            </div>
+            <div class="topic-group">
+                <h3>Stories</h3>
+                <ul>
+                    <li><a href="successstories.html">Marine Conservation Success Stories</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile hamburger side menu -->
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        </aside>
+
+        <!-- CONTENT -->
+        <main class="content-container">
+            
+            <section id="marine-ecosystem" class="content-section">
+                <h1 class="main-title" id="coral-reefs">What is a Marine Ecosystem?</h1>
+                <p>A <strong>marine ecosystem</strong> is a dynamic saltwater environment where living communities (fish, mammals, microbes) interact with non-living elements (salinity, sunlight, nutrients). Covering over <strong>70% of the Earth's surface</strong>, these vast aquatic biomes drive global weather patterns, dictate water cycles, and form the biological baseline that makes terrestrial life possible. They include everything from coastal tidal mudflats to ultra-deep oceanic trenches.</p>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="content-section" id="coral-reefs">
+                <h2 class="section-title">Types of Marine Ecosystems</h2>
+                <p>From sunlit coastal shallows down to absolute abyssal darkness, ocean life adapts to distinct environmental boundaries:</p>
+                
+                <div class="ecosystem-grid">
+
+                    <div class="eco-card">
+                        <img src="Image/topic-coralreef.jpg" alt="Mangrove" class="eco-image">
+
+                        <h3>1. Coral Reefs</h3>
+                        <p>Coral reefs are underwater ecosystems built by tiny coral animals called coral polyps. Although they cover <strong>less than 0.1% of the ocean floor</strong>, they support about <strong>25% of all marine species</strong>, earning them the nickname <strong>"rainforests of the sea."</strong></p>
+                        <p class="key-species"><strong>Key Species:</strong> Hard corals, clownfish, parrotfish, reef sharks.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-mangrove.jpg" alt="Mangrove" class="eco-image">
+
+                        <h3>2. Mangroves</h3>
+                        <p>Mangroves are salt-tolerant forests found along tropical and subtropical coastlines. Their tangled roots protect coastlines from erosion, improve water quality, and provide safe nursery habitats for many young marine animals.</p>
+                        <p class="key-species"><strong>Key Species:</strong>  Red mangroves, mudskippers, crabs, juvenile fish.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-seagrassmeadows.jpg" alt="Seagrass Meadows" class="eco-image">
+
+                        <h3>3. Seagrass Meadows</h3>
+                        <p>Seagrass meadows are underwater fields of flowering plants that grow in shallow coastal waters. They stabilize the seabed, improve water quality, store large amounts of carbon, and provide food and shelter for many marine animals.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Dugongs, Green Sea Turtles, Seahorses, Pipefish.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-kelpforest.jpg" alt="Kelp Forests" class="eco-image">
+
+                        <h3>4. Kelp Forests</h3>
+                        <p>Kelp forests are underwater ecosystems formed by giant brown algae called kelp that grow in cool, nutrient-rich coastal waters. They provide food, shelter, and breeding grounds for a wide variety of marine life.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Giant kelp, sea otters, sea urchins, kelp bass.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-estuaries.jpg" alt="Estuaries" class="eco-image">
+
+                        <h3>5. Estuaries</h3>
+                        <p>Estuaries are places where freshwater from rivers mixes with seawater. These nutrient-rich ecosystems are among the most productive in the world and serve as important breeding and nursery areas for many fish, shellfish, and birds.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Oysters, mud crabs, herons, juvenile fish.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-lagoon.jpg" alt="Lagoon" class="eco-image">
+
+                        <h3>6. Lagoons</h3>
+                        <p>Lagoons are shallow coastal bodies of saltwater separated from the open ocean by coral reefs, sandbars, or barrier islands. Their calm waters provide habitats for many fish, seagrasses, and other marine life.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Stingrays, seagrasses, seahorses, juvenile fish.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-saltmarsh.jpg" alt="Salt Marsh" class="eco-image">
+
+                        <h3>7. Salt Marshes</h3>
+                        <p>Salt marshes are coastal wetlands that are regularly flooded by seawater during high tides. They help reduce coastal erosion, filter pollutants, store carbon, and provide shelter for many animals.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Cordgrass, fiddler crabs, shrimp, herons.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-intertidalzone.jpg" alt="Intertidal Zone" class="eco-image">
+
+                        <h3>8. Intertidal Zones</h3>
+                        <p>Intertidal zones are coastal areas between the high and low tide marks. Organisms living here must survive changing tides, crashing waves, and varying temperatures.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Barnacles, mussels, sea stars, crabs.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-opensea.jpg" alt="Open Ocean" class="eco-image">
+
+                        <h3>9. Open Ocean (Pelagic Zone)</h3>
+                        <p>The open ocean is the vast area beyond the coast and is the largest marine ecosystem on Earth. Sunlight reaches the upper layers, where microscopic phytoplankton produce oxygen and form the base of the marine food web.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Phytoplankton, tuna, dolphins, whale sharks.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-deepsea.jpg" alt="Deap Sea" class="eco-image">
+
+                        <h3>10. Deep Sea and Sea Floor</h3>
+                        <p>The deep sea begins below about <strong>200 metres</strong>, where sunlight becomes very limited or disappears completely. It is extremely cold, dark, and under immense pressure, yet many specially adapted organisms live there.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Anglerfish, giant squid, sea cucumbers, tube worms.</p>
+                    </div>
+
+                    <div class="eco-card">
+                        <img src="Image/topic-polarocean.jpg" alt="Polar Oceans" class="eco-image">
+                        
+                        <h3>11. Polar Oceans</h3>
+                        <p>Polar oceans are the cold waters surrounding the Arctic and Antarctica. Sea ice, cold temperatures, and seasonal sunlight create unique ecosystems that support many specially adapted marine animals.</p>
+                        <p class="key-species"><strong>Key Species:</strong> Antarctic krill, penguins, seals, polar bears (Arctic only).</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="ecosystem-matters" class="content-section">
+                <h2 class="section-title">Why Marine Ecosystems Matters</h2>
+                
+                <div class="info-callout blue-callout">
+                    <h3>Did You Know?</h3>
+                    <p>Although the ocean covers <strong>71% of Earth's surface</strong>, scientists estimate that over <strong>80% of it remains unexplored</strong>. Every new discovery helps us better understand and protect marine life.</p>
+                </div>
+
+                <ul class="styled-list label-blue">
+                    <li><strong>🌡️ Climate Regulation:</strong> The ocean <strong>absorbs about 90% of the excess heat</strong> caused by global warming and stores large amounts of carbon dioxide. This helps regulate Earth's climate and reduces the impact of climate change.</li>
+                    <li><strong>🌬️ Oxygen Production:</strong> Tiny marine plants called <strong>phytoplankton produce around 50% of the oxygen</strong> we breathe. Every second breath you take is thanks to the ocean.</li>
+                    <li><strong>🍽️ Food & Livelihoods:</strong> More than <strong>3 billion people rely on seafood</strong> as a major source of protein. Healthy oceans also support millions of jobs through fishing, tourism, shipping, and aquaculture.</li>
+                    <li><strong>🛡️ Coastal Protection:</strong> Coral reefs, mangroves, and seagrass meadows act as natural barriers. They reduce wave energy, limit coastal erosion, and help protect communities from storms and flooding.</li>
+                    <li><strong>🐠 Incredible Biodiversity:</strong> The ocean is home to over <strong>240,000 known marine species</strong>, and scientists believe millions more are still undiscovered. Every species plays an important role in keeping marine ecosystems healthy.</li>
+                    <li><strong>💊 Medicine from the Sea:</strong> Many marine organisms contain unique chemicals that scientists use to develop <strong>new medicines</strong>. Research from the ocean has contributed to treatments for cancer, pain relief, and bacterial infections.</li>
+                </ul>
+            </section>
+
+            <!-- THREATS SECTION -->
+            <section id="threats" class="content-section">
+                <h1 class="block-header red-text">Threats They Face</h1>
+                <p class="block-subtitle" style="margin-top: 5px;"><strong>Our oceans are facing growing threats caused by human activities.</strong> Pollution, climate change, overfishing, and habitat destruction are damaging marine ecosystems and putting countless species at risk. Learning about these threats is the first step toward protecting our oceans.</p>
+
+                <div class="info-callout orange-callout">
+                    <h2 style="font-weight: 700;">Did you know?</h2>
+                    <h4 style="font-weight: 600;">The Ocean Under Pressure</h4>
+                    <p>Scientists estimate that <strong>less than 3% of the world's oceans are effectively protected</strong>, while many marine habitats continue to face pollution, overfishing, and climate change. Every year, these threats make it harder for marine life to survive and recover.</p>
+                </div>
+            </section>
+
+            <section class="site-section" id="humans" style="padding-left:0; padding-right:0; padding-top:10px;">
+                <div class="section-container">
+                    <h2 class="subsection-title">Human Caused Threats</h2>
+
+                    <div class="faq-accordion-container" style="max-width:100%; margin:0;">
+                        <div class="faq-item">
+                            <div class="faq-trigger">
+                                <h4>🏝️ Habitat Destruction</h4>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>
+                                    <strong>Coastal development</strong>, <strong>dredging</strong>, and land clearing destroy important habitats such as <strong>coral reefs</strong>, <strong>mangroves</strong>, and <strong>seagrass meadows</strong>. These ecosystems provide food, shelter, and <strong>breeding grounds</strong> for countless marine species. When they are damaged or removed, many animals struggle to survive, causing a loss of <strong>biodiversity</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-trigger">
+                                <h4>🎣 Overfishing</h4>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>
+                                    <strong>Overfishing</strong> happens when fish are caught faster than their <strong>populations</strong> can recover. As numbers decrease, many species cannot <strong>reproduce</strong> quickly enough, making some become <strong>endangered</strong>. Fishing methods can also accidentally catch other animals, known as <strong>bycatch</strong>, including turtles, dolphins, and sharks, disrupting the entire <strong>marine food web</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-trigger">
+                                <h4>🦈 Food Chain Disruption</h4>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>
+                                    Large <strong>predators</strong> like <strong>sharks</strong> help keep ocean ecosystems balanced. When their numbers decline because of overfishing, smaller animals increase rapidly and upset the <strong>food chain</strong>. This imbalance affects many other species, making it harder for the entire <strong>ecosystem</strong> to stay healthy.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-trigger">
+                                <h4>🗑️ Plastic Pollution</h4>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>
+                                    <strong>Plastic pollution</strong> is one of the biggest threats to the ocean. Items like <strong>single-use plastics</strong>, bottles, bags, and abandoned <strong>fishing nets</strong> can trap or injure marine animals. Tiny pieces called <strong>microplastics</strong> are eaten by fish and other sea creatures, entering the <strong>food chain</strong> and affecting both wildlife and humans.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-trigger">
+                                <h4>🌡️ Climate Change</h4>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>
+                                    <strong>Climate change</strong> is causing <strong>ocean temperatures</strong> to rise, leading to <strong>coral bleaching</strong> and the loss of coral reefs. Melting ice also raises <strong>sea levels</strong>, while <strong>ocean acidification</strong> makes it difficult for corals and shell-forming animals to survive. These changes damage marine <strong>habitats</strong> and force many species to move or die.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-trigger">
+                                <h4>🛢️ Oil Spills</h4>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <div class="faq-content">
+                                <p>
+                                    <strong>Oil spills</strong> release <strong>toxic chemicals</strong> into the ocean, covering birds' <strong>feathers</strong> and mammals' <strong>fur</strong>, making it difficult for them to fly, swim, or stay warm. Oil also blocks sunlight and reduces <strong>oxygen</strong> in the water, harming fish, coral reefs, and other marine life. Some <strong>ecosystems</strong> may take decades to <strong>recover</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="effects" class="content-section">
+                <h2 class="subsection-title">Effects on Marine Life</h2>
+                <p>Human activities are changing ocean ecosystems and making it harder for marine animals to survive. These impacts affect everything from individual species to entire food webs.</p>
+                <ul class="styled-list label-red">
+                    <li><strong>🐠 Habitat Loss:</strong> When coral reefs, mangroves, and seagrass meadows are damaged, marine animals lose their homes, breeding grounds, and places to find food. This can cause populations to decline.</li>
+                    <li><strong>📉 Population Decline:</strong> Overfishing, pollution, and climate change reduce the number of marine animals. Some species become endangered or even face extinction.</li>
+                    <li><strong>⚖️ Food Chain Disruption:</strong> The loss of key species, such as sharks and large fish, upsets the balance of the marine food web. This affects many other animals that depend on healthy ecosystems.</li>
+                    <li><strong>🌊 Ecosystem Damage:</strong> Pollution, rising ocean temperatures, and ocean acidification weaken marine ecosystems. Coral reefs bleach, biodiversity decreases, and oceans become less able to support marine life.</li>
+                </ul>
+            </section>
+
+            <!-- SOLUTION SECTION STARTPOINT -->
+            <section id="solution" class="content-section">
+                <h1 class="block-header teal-text">The Solution</h1>
+                <p class="block-subtitle" style="margin-top: 5px;">Together, we can protect our oceans and create a healthier future for marine life.</p>
+
+                <h2 class="subsection-title">Why It Matters</h2>
+                <p><strong>Healthy oceans are essential for life on Earth.</strong> They produce about <strong>50% of the oxygen we breathe</strong>, regulate the <strong>global climate</strong>, provide <strong>food and livelihoods</strong> for billions of people, and support countless marine species. By protecting our oceans today, we help ensure a healthier planet for <strong>both wildlife and future generations.</strong></p>
+            </section>
+
+            <section id="help" class="content-section">
+                <h2 class="subsection-title">How You Can Help</h2>
+                <ul class="styled-list label-teal">
+                    <li><strong>♻️ Reduce Plastic Waste:</strong> Choose reusable bottles, bags, and containers instead of single-use plastics. Properly dispose of rubbish and recycle whenever possible to prevent plastic from entering rivers and oceans.</li>
+                    <li><strong>🧹 Join Beach or River Clean-ups:</strong> Take part in local clean-up events or organise one with your school or community. Removing litter helps protect marine animals from becoming trapped or accidentally eating plastic.</li>
+                    <li><strong>🐟 Choose Sustainable Seafood:</strong> Support sustainable fisheries by choosing seafood that is responsibly sourced. This helps prevent overfishing and allows fish populations to recover.</li>
+                    <li><strong>💡 Reduce Your Carbon Footprint:</strong> Save electricity, use public transport, walk, or cycle when possible. Reducing greenhouse gas emissions helps slow climate change, which protects coral reefs and other marine ecosystems.</li>
+                    <li><strong>📢 Spread Awareness:</strong> Share what you've learned with your family, friends, and classmates. Encouraging others to care about the ocean can inspire more people to take action.</li>
+                    <li><strong>🌊 Support Marine Conservation:</strong> Support organisations and projects that protect marine wildlife and restore habitats. You can donate, volunteer, or participate in conservation activities to make a positive impact.</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <p>
+            © 2026 Ocean Guardian • All rights reserved<br>
+            <a class="footer-credit" href="credits.html">Credits</a>
+        </p>
+    </footer>
+
+
+    <script type="module" src="Javascript/app.js"></script>
+    <script type="module" src="Javascript/auth.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".topic-group ul li a");
+
+        const observerOptions = {
+            root: null,
+            rootMargin: "-25% 0px -65% 0px", 
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+                    
+                    navLinks.forEach((link) => {
+                        link.parentElement.classList.remove("active");
+                    });
+
+                    const activeLink = document.querySelector(`.topic-group ul li a[href="#${id}"]`);
+                    if (activeLink) {
+                        activeLink.parentElement.classList.add("active");
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach((sec) => observer.observe(sec));
+    });
+    </script>
+</body>
+</html>

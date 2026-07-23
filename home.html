@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guardian | Home</title>
+    <link rel="icon" href="Image/oceanguardianlogo.png" type="Image/oceanguardianlogo.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-brand">
+                <div class="brand-text-wrapper">
+                    <span class="brand-main">OCEAN</span>
+                    <span class="brand-sub">GUARDIAN</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu-links">
+                <li><a href="home.html#home" class="menu-item active">Home</a></li>
+                <li><a href="about.html" class="menu-item">About</a></li>
+
+                <li class="nav-dropdown-wrapper">
+                    <a href="#topics" class="menu-item dynamic-trigger">
+                        Topics <i class='bx bx-chevron-down toggle-arrow'></i>
+                    </a>
+                    <ul class="dropdown-panel">
+                        <li><a href="endangeredmarineanimals.html"> Endangered Marine Species</a></li>
+                        <li><a href="topic.html#marine-ecosystem"> Marine Ecosystems</a></li>
+                        <li><a href="topic.html#threats"> Threats</a></li>
+                        <li><a href="topic.html#solution"> Conservation & Action</a></li>
+                        <li><a href="successstories.html"> Conservation Success Stories</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="quiz.html" class="menu-item">Quiz</a></li>
+                <li><a href="signupandlogin/dashboard.html" class="menu-item">Dashboard</a></li>
+
+                <!-- MOBILE SIGN UP -->
+                <li class="mobile-only-cta">
+                    <div class="mobile-nav-action-group" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 15px;">
+                        <a href="signupandlogin/login.html" class="nav-cta-block" id="mobile-auth-btn" style="margin: 0; flex: 1;">Log In</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-action-group">
+                <a href="signupandlogin/login.html" class="nav-cta-block" id="auth-btn">Log In</a>
+                <a href="signupandlogin/dashboard.html" id="profile-btn" class="profile-btn"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Showcase Section -->
+    <header class="ocean-hero" id="home">
+        <div class="hero-inner">
+            <span class="sub-heading" data-aos="fade-up" data-aos-duration="1000">SDG 14 • Life Below Water</span>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Explore the Ocean.<br>Protect Marine Life.</h1>
+            <p class="hero-intro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Discover marine species, explore ocean ecosystems, understand environmental threats, and learn how everyone can help create a healthier future for our oceans.</p>
+            
+            <div class="hero-actions" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <a href="topic.html" class="hero-primary-btn">Explore Marine Topics</a>
+                <a href="quiz.html" class="hero-secondary-btn">Test Your Knowledge</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="site-section marine-life-section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fa-solid fa-water"></i>
+                    Ocean Conservation
+                </span>
+
+                <h2>Why Protect Our Oceans?</h2>
+
+                <p>
+                    Our oceans are home to extraordinary wildlife and ecosystems that support life on Earth. Explore the key topics below to discover the challenges they face and how we can protect them together.
+                </p>
+            </div>
+
+            <div class="marine-grid">
+                <!-- Endangered Species -->
+                <a href="endangeredmarineanimals.html" class="marine-card" data-aos="zoom-in">
+                    <div class="marine-image">
+                        <img src="Image/home-seaturtle.jpg" alt="Hawksbill Turtle">
+                    </div>
+
+                    <div class="marine-content">
+                        <h3>Endangered Species</h3>
+                        <p>
+                            Discover remarkable marine animals, their conservation status, and why they need our protection.
+                        </p>
+                        <span class="marine-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Marine Ecosystems -->
+                <a href="topic.html#ecosystem" class="marine-card" data-aos="zoom-in">
+                    <div class="marine-image">
+                        <img src="Image/home-coralreefs.jpg" alt="Coral Reef">
+                    </div>
+                    <div class="marine-content">
+                        <h3>Marine Ecosystems</h3>
+                        <p>
+                            Explore the diverse ocean habitats that support marine life and keep our oceans healthy.
+                        </p>
+                        <span class="marine-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Threats -->
+                <a href="topic.html#threats" class="marine-card" data-aos="zoom-in">
+                    <div class="marine-image">
+                        <img src="Image/Home-plasticpollution.jpg" alt="Ocean Pollution">
+                    </div>
+                    <div class="marine-content">
+                        <h3>Ocean Threats</h3>
+                        <p>
+                            Learn about the human activities and environmental challenges affecting our oceans today.
+                        </p>
+                        <span class="marine-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Take Action -->
+                <a href="topic.html#solution" class="marine-card" data-aos="zoom-in">
+                    <div class="marine-image">
+                        <img src="Image/home-beachcleanup.jpg" alt="Beach Cleanup">
+                    </div>
+                    <div class="marine-content">
+                        <h3>Take Action</h3>
+                        <p>
+                            Find simple, meaningful ways you can help protect marine life and make a positive impact.
+                        </p>
+                        <span class="marine-link">
+                            Learn More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section ocean-numbers-section">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Ocean Facts
+                </span>
+
+                <h2>Ocean in Numbers</h2>
+
+                <p>
+                    Our oceans are essential to life on Earth. These key statistics
+                    reveal their importance and why protecting them matters.
+                </p>
+            </div>
+
+            <div class="numbers-grid">
+                <div class="number-card" data-aos="fade-up">
+                    <div class="number-icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+
+                    <h3><span class="counter" data-target="71">0</span>%</h3>
+                    <p>of Earth's surface is covered by oceans.</p>
+                </div>
+
+                <div class="number-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="number-icon">
+                        <i class="fa-solid fa-lungs"></i>
+                    </div>
+
+                    <h3><span class="counter" data-target="50">0</span>%</h3>
+                    <p>of the oxygen we breathe is produced by the ocean.</p>
+                </div>
+
+                <div class="number-card" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="number-icon">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+
+                    <h3><span class="counter" data-target="80">0</span>%</h3>
+                    <p>of the ocean remains unexplored.</p>
+                </div>
+
+                <div class="number-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="number-icon">
+                        <i class="fa-solid fa-fish-fins"></i>
+                    </div>
+
+                    <h3><span class="counter" data-target="3">0</span> Billion</h3>
+                    <p>people depend on marine resources for their livelihoods.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="site-section marine-life-section" id="explore-map-section">
+        <div class="section-container map-container">
+            <canvas id="bubbles-canvas"></canvas>
+            
+            <div class="map-content" data-aos="fade-right">
+                <span class="map-subtitle">Ocean Map</span>
+                <h2 class="map-title">Explore Marine Life Around <span>The World</span></h2>
+                <p class="map-description">Explore endangered marine animals across the world's oceans and learn how conservation efforts are helping protect their future.</p>
+                <a href="oceanmap.html" class="map-btn">
+                    VIEW THE MAP <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="map-box" data-aos="fade-left">
+                <div class="map-wrapper">
+                    <img src="Image/ocean_map.png" class="map-bg" alt="Ocean Map Global Layout">
+                    <div class="ocean-text" id="lbl-arctic">Arctic Ocean</div>
+                    <div class="ocean-text" id="lbl-pacific">Pacific Ocean</div>
+                    <div class="ocean-text" id="lbl-atlantic">Atlantic Ocean</div>
+                    <div class="ocean-text" id="lbl-indian">Indian Ocean</div>
+                    <div class="ocean-text" id="lbl-southern">Southern Ocean</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section info-section-wrapper">
+        <div class="section-container">
+            <div class="info-row" data-aos="fade-up">
+                <div class="info-image-frame">
+                    <img src="Image/home-marinebiologistwithseaturtle.jpg" alt="Marine Biologist with sea turtle">
+                </div>
+                <div class="info-content-frame">
+                    <span class="info-tag-bubble red-bubble">
+                        <i class="fa-solid fa-heart"></i> Success Stories
+                    </span>
+                    <h2>Marine Conservation Success Stories</h2>
+                    <p>Explore documented conservation metrics where targeted legislation, local community monitoring networks, and scientific intervention successfully saved vital biomes.</p>
+                    <ul class="info-check-list">
+                        <li><i class="fa-solid fa-circle-info"></i> Modern recovery case data highlights</li>
+                        <li><i class="fa-solid fa-water"></i> Species population stabilizer projects</li>
+                    </ul>
+                    <a href="successstories.html" class="info-action-btn dark-btn">
+                        READ STORIES <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section join-section marine-life-section">
+        <div class="section-container">
+            <div class="join-card" data-aos="zoom-in">
+
+                <div class="join-icon">
+                    <i class="fa-solid fa-water"></i>
+                </div>
+
+                <span class="section-label">
+                    Join Ocean Guardian
+                </span>
+
+                <h2>Become an Ocean Guardian</h2>
+
+                <p>
+                    Every journey begins with awareness. Continue exploring our oceans
+                    and become part of a community dedicated to protecting marine life
+                    for future generations.
+                </p>
+
+                <a href="signupandlogin/dashboard.html" class="join-btn">
+                    Join Ocean Guardian
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="reading-checkpoint-wrapper">
+        <div class="checkpoint-card">
+            <div class="checkpoint-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="checkpoint-body">
+                <h4>Ready to Learn More?</h4>
+                <p>Explore more pages across Ocean Guardian.</p>
+            </div>
+            <a href="viewmore.html" class="checkpoint-action-btn">
+                View More Pages <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p>© 2026 Ocean Guardian • All rights reserved</p>
+            <a class="footer-credit" href="credits.html">Credits</a>
+        </div>
+    </footer>
+
+    <button id="replayIntroBtn">
+        Replay Intro
+    </button>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Files -->
+    <script type="module" src="Javascript/auth.js"></script>
+    <script type="module" src="Javascript/app.js"></script>
+    <script type="module" src="Javascript/animation.js"></script>
+    <script>
+        AOS.init({
+            duration: 850,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        // Ocean Counter
+        const counters = document.querySelectorAll(".counter");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+
+                const counter = entry.target;
+                const target = +counter.dataset.target;
+
+                let current = 0;
+                const duration = 1700;
+                const stepTime = Math.max(10, duration / target);
+
+                const updateCounter = () => {
+                    current++;
+
+                    counter.textContent = current;
+
+                    if (current < target) {
+                        setTimeout(updateCounter, stepTime);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+
+                updateCounter();
+
+                observer.unobserve(counter);
+            });
+        });
+
+        counters.forEach(counter => observer.observe(counter));
+
+        const replayBtn = document.getElementById("replayIntroBtn");
+
+        replayBtn.addEventListener("click", () => {
+            window.location.href = "intro.html";
+        });
+    </script>
+</body>
+</html>
