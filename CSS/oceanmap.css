@@ -1,0 +1,301 @@
+/* Note: This CSS file is for ocean map page */
+/* Ocean Map Section */
+
+.ocean-map-section{
+    padding: 80px 5%;
+    background: #f8fcff;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-tag{
+    color: #00b4d8;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-header h2{
+    margin: 10px 0;
+    font-size: 2.8rem;
+    color: #0f2a4a;
+}
+
+.section-description{
+    max-width: 700px;
+    margin: auto;
+    color:#60738a;
+    line-height: 1.8;
+}
+
+/* Map */
+
+.map-container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.world-map{
+    width: 100%;
+    display: block;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.15);
+}
+
+/* Ocean Buttons */
+
+.ocean-btn{
+    position: absolute;
+    background: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 40px;
+    color: #0f2a4a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+.ocean-btn:hover{
+    background: #00b4d8;
+    color: white;
+    transform: translateY(-4px) scale(1.05);
+}
+
+/* Ocean Pins */
+
+.pacific{
+    left: 6%;
+    top: 46%;
+}
+
+.atlantic{
+    left: 31%;
+    top: 29%;
+}
+
+.indian{
+    left: 66%;
+    top: 58%;
+}
+
+.arctic{
+    left: 43%;
+    top: 4%;
+}
+
+.southern{
+    left: 45%;
+    top: 83%;
+}
+
+/* Modal*/
+.ocean-modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+.ocean-modal.active{
+    display: flex;
+}
+
+.ocean-modal.active{
+    display: flex;
+}
+
+/* Pop up */
+
+.modal-content{
+    background: white;
+    width: 600px;
+    max-width: 90vw;
+    max-height: 85vh;
+    overflow-y: auto;
+    border-radius: 24px;
+    padding: 30px;
+    position: relative;
+    animation: popup .35s ease;
+}
+
+@keyframes popup{
+    from{
+        opacity: 0;
+        transform: translateY(20px) scale(.95);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Close button */
+
+.close-modal{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #edf8fc;
+    color: #0f2a4a;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 18px;
+}
+
+.close-modal:hover{
+    background: #00b4d8;
+    color: white;
+}
+
+/* Text */
+
+.ocean-title{
+    font-size: 2rem;
+    color: #0f2a4a;
+    margin-bottom: 15px;
+}
+
+.ocean-description{
+    color: #60738a;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Info card */
+
+.info-card{
+    display: grid;
+    gap: 18px;
+}
+
+.info-item{
+    background: #f7fbff;
+    border-left:5px solid  #00b4d8;
+    border-radius: 12px;
+    padding: 15px 20px;
+}
+
+.info-item h4{
+    color: #0f2a4a;
+    margin-bottom: 8px;
+}
+
+.info-item p{
+    color: #60738a;
+}
+
+/* Button */
+
+.explore-btn{
+    display: block;
+    margin-top: 30px;
+    background: #00b4d8;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.explore-btn:hover{
+    background: #0096c7;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsiveness */
+
+@media(max-width:768px){
+
+    .section-header h2{
+        font-size: 2rem;
+    }
+
+    .ocean-btn{
+        font-size: .8rem;
+        padding: 8px 14px;
+    }
+
+    .modal-content{
+        padding: 25px;
+    }
+}
+
+.modal-content::-webkit-scrollbar{
+    display:none;
+}
+
+@media (max-width: 768px) {
+    .ocean-text {
+        font-size: 0.5rem;
+        padding: 3px 6px;
+    }
+
+    .map-pin {
+        width: 10px;
+        height: 10px;
+    }
+
+    .info-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Bubble cursor trail */
+
+.cursor-bubble{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,0.95) 0%,
+        rgba(173,232,244,0.7) 55%,
+        rgba(173,232,244,0) 100%
+    );
+
+    animation: bubbleTrail 1.2s linear forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes bubbleTrail{
+
+    0%{
+        opacity:0.8;
+        transform:translate(-50%,-50%) scale(1);
+    }
+
+    100%{
+        opacity:0;
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% - 80px)
+            )
+            scale(.25);
+    }
+
+}
