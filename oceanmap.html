@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guardian | Ocean Map</title>
+    <link rel="icon" href="Image/oceanguardianlogo.png" type="Image/oceanguardianlogo.ico">
+    <link rel="stylesheet" href="CSS/oceanmap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-brand">
+                <div class="brand-text-wrapper">
+                    <span class="brand-main">OCEAN</span>
+                    <span class="brand-sub">GUARDIAN</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu-links">
+                <li><a href="home.html#home" class="menu-item">Home</a></li>
+                <li><a href="about.html" class="menu-item">About</a></li>
+
+                <li class="nav-dropdown-wrapper">
+                    <a href="#topics" class="menu-item dynamic-trigger active">
+                        Topics <i class='bx bx-chevron-down toggle-arrow'></i>
+                    </a>
+                    <ul class="dropdown-panel">
+                        <li><a href="endangeredmarineanimals.html"> Endangered Marine Species</a></li>
+                        <li><a href="topic.html#marine-ecosystem"> Marine Ecosystems</a></li>
+                        <li><a href="topic.html#threats"> Threats</a></li>
+                        <li><a href="topic.html#solution"> Conservation & Action</a></li>
+                        <li><a href="successstories.html"> Conservation Success Stories</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="quiz.html" class="menu-item">Quiz</a></li>
+                <li><a href="signupandlogin/dashboard.html" class="menu-item">Dashboard</a></li>
+
+                <!-- MOBILE SIGN UP -->
+                <li class="mobile-only-cta">
+                    <div class="mobile-nav-action-group" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 15px;">
+                        <a href="signupandlogin/login.html" class="nav-cta-block" id="mobile-auth-btn" style="margin: 0; flex: 1;">Log In</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-action-group">
+                <a href="signupandlogin/login.html" class="nav-cta-block" id="auth-btn">Log In</a>
+                <a href="signupandlogin/dashboard.html" id="profile-btn" class="profile-btn"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="ocean-map-section">
+
+        <div class="section-header">
+            <span class="section-tag" data-aos="fade-up">Explore</span>
+            <h2 data-aos="fade-up">Explore the World's Oceans</h2>
+            <p class="section-description" data-aos="fade-up">
+                Click on an ocean to discover fascinating facts before exploring
+                the endangered marine animals that call it home.
+            </p>
+        </div>
+
+        <!-- World Map -->
+        <div class="map-container">
+
+            <img src="Image/ocean_map.png" alt="World Map" class="world-map">
+
+            <button class="ocean-btn pacific" data-ocean="pacific">
+                Pacific Ocean
+            </button>
+
+            <button class="ocean-btn atlantic" data-ocean="atlantic">
+                Atlantic Ocean
+            </button>
+
+            <button class="ocean-btn indian" data-ocean="indian">
+                Indian Ocean
+            </button>
+
+            <button class="ocean-btn arctic" data-ocean="arctic">
+                Arctic Ocean
+            </button>
+
+            <button class="ocean-btn southern" data-ocean="southern">
+                Southern Ocean
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Ocean Pop Up -->
+
+    <div class="ocean-modal">
+
+        <div class="modal-content">
+
+            <button class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2 class="ocean-title">
+                Pacific Ocean
+            </h2>
+
+            <p class="ocean-description">
+                The Pacific Ocean is the largest and deepest ocean on Earth,
+                covering nearly one-third of the planet's surface.
+            </p>
+
+            <div class="info-card">
+
+                <div class="info-item">
+                    <h4>📏 Area</h4>
+                    <p class="ocean-area">
+                        165.25 million km²
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h4>🌊 Average Depth</h4>
+                    <p class="ocean-depth">
+                        4,280 m
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h4>🌍 Borders</h4>
+                    <p class="ocean-borders">
+                        Asia, Australia, North America,
+                        South America
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h4>💡 Fun Fact</h4>
+                    <p class="ocean-fact">
+                        The Mariana Trench is the deepest place on Earth.
+                    </p>
+                </div>
+            </div>
+
+            <a href="endangeredmarineanimals.html?ocean=pacific" class="explore-btn">Explore Marine Animals <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            © 2026 Ocean Guardian • All rights reserved<br>
+            <a class="footer-credit" href="credits.html">Credits</a>
+        </p>
+    </footer>
+    
+    <script type="module" src="Javascript/auth.js"></script>
+    <script type="module" src="Javascript/oceanmap.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Guardian | View More</title>
+    <link rel="icon" href="Image/oceanguardianlogo.png" type="Image/oceanguardianlogo.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/viewmore.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-brand">
+                <div class="brand-text-wrapper">
+                    <span class="brand-main">OCEAN</span>
+                    <span class="brand-sub">GUARDIAN</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu-links">
+                <li><a href="home.html#home" class="menu-item active">Home</a></li>
+                <li><a href="about.html" class="menu-item">About</a></li>
+
+                <li class="nav-dropdown-wrapper">
+                    <a href="#topics" class="menu-item dynamic-trigger">
+                        Topics <i class='bx bx-chevron-down toggle-arrow'></i>
+                    </a>
+                    <ul class="dropdown-panel">
+                        <li><a href="endangeredmarineanimals.html"> Endangered Marine Species</a></li>
+                        <li><a href="topic.html#marine-ecosystem"> Marine Ecosystems</a></li>
+                        <li><a href="topic.html#threats"> Threats</a></li>
+                        <li><a href="topic.html#solution"> Conservation & Action</a></li>
+                        <li><a href="successstories.html"> Conservation Success Stories</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="quiz.html" class="menu-item">Quiz</a></li>
+                <li><a href="signupandlogin/dashboard.html" class="menu-item">Dashboard</a></li>
+
+                <!-- MOBILE SIGN UP -->
+                <li class="mobile-only-cta">
+                    <div class="mobile-nav-action-group" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 15px;">
+                        <a href="signupandlogin/login.html" class="nav-cta-block" id="mobile-auth-btn" style="margin: 0; flex: 1;">Log In</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-action-group">
+                <a href="signupandlogin/login.html" class="nav-cta-block" id="auth-btn">Log In</a>
+                <a href="signupandlogin/dashboard.html" id="profile-btn" class="profile-btn"><i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="search-section">
+            <form id="searchForm" class="search-bar">
+                <i class='bx bx-search search-icon'></i>
+                <input type="text" id="searchInput" placeholder="Search...">
+            </form>
+    </section>
+
+    <section class="explore-section">
+        <div class="explore-grid">
+            <a href="about.html" class="explore-card">
+                <div class="explore-icon"><i class="fas fa-bullseye"></i></div>
+                <h2>About us</h2>
+                <p>Learn about our mission to protect marine life and inspire everyone to care for our oceans together.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="oceanmap.html" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <h2>Ocean Map</h2>
+                <p>Explore the world's oceans and discover unique marine habitats, ecosystems, and endangered species living within them.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="endangeredmarineanimals.html" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-fish"></i></div>
+                <h2>Endangered Marine Animals</h2>
+                <p>Meet endangered marine animals, learn their stories, threats, habitats, and why protecting them truly matters today.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="topic.html#marine-ecosystem" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-water"></i></div>
+                <h2>Marine Ecosystem</h2>
+                <p>Discover coral reefs, mangroves, and seagrass meadows that support diverse marine life and healthy oceans worldwide.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="topic.html#threats" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <h2>Threats</h2>
+                <p>Understand the biggest threats facing marine life, including pollution, climate change, overfishing, and habitat destruction today.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="topic.html#solution" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                <h2>How you can help</h2>
+                <p>Learn simple everyday actions that protect marine life and help create cleaner, healthier oceans for future generations.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="successstories.html" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h2>Marine Conservation Success Stories</h2>
+                <p>Discover inspiring conservation success stories showing how dedicated efforts helped protect marine species and restore ocean ecosystems.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="quiz.html" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-brain"></i></div>
+                <h2>Quiz</h2>
+                <p>Challenge yourself with fun quizzes, test your ocean knowledge, and earn badges while learning about marine conservation.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+            <a href="credits.html" class="explore-card">
+                <div class="explore-icon"><i class="fa-solid fa-users"></i></div>
+                <h2>Credits</h2>
+                <p>Meet the creators, explore our resources, and view the references that helped build this educational website.</p>
+                <span class="explore-arrow"><i class='bx bx-right-arrow-alt'></i></span>
+            </a>
+        </div>
+    </section>
+
+    <a href="home.html" class="go-back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+
+    <script type="module" src="Javascript/auth.js"></script>
+    <script type="module" src="Javascript/app.js"></script>
+    <script type="module" src="Javascript/viewmore.js"></script>
+</body>
+</html>
